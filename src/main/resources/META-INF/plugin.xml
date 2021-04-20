@@ -1,19 +1,14 @@
 <idea-plugin>
-    <id>com.github.adrijaned.intellijvhdlplugin</id>
-    <name>intellij-vhdl-plugin</name>
-    <vendor>adrijaned</vendor>
+    <id>eu.adrijaned.intellijvhdlplugin</id>
+    <name>VHDL Support</name>
+    <vendor>Jindřich Dítě</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.adrijaned.intellijvhdlplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.adrijaned.intellijvhdlplugin.services.MyProjectService"/>
+        <fileType name="VHDL Source file" implementationClass="eu.adrijaned.intellijvhdlplugin.extensions.VHDLFileType"
+        fieldName="INSTANCE" language="VHDL" extensions="vhd"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.adrijaned.intellijvhdlplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
