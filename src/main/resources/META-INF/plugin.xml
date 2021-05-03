@@ -10,5 +10,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="VHDL Source file" implementationClass="eu.adrijaned.intellijvhdlplugin.extensions.VHDLFileType"
         fieldName="INSTANCE" language="VHDL" extensions="vhd"/>
+        <lang.parserDefinition language="VHDL"
+                               implementationClass="eu.adrijaned.intellijvhdlplugin.language.VHDLParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="VHDL"
+                                       implementationClass="eu.adrijaned.intellijvhdlplugin.language.VHDLSyntaxHighlighterFactory"/>
     </extensions>
 </idea-plugin>
