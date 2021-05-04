@@ -14,5 +14,6 @@
                                implementationClass="eu.adrijaned.intellijvhdlplugin.language.VHDLParserDefinition"/>
         <lang.syntaxHighlighterFactory language="VHDL"
                                        implementationClass="eu.adrijaned.intellijvhdlplugin.language.VHDLSyntaxHighlighterFactory"/>
+        <lang.commenter language="VHDL" implementationClass="eu.adrijaned.intellijvhdlplugin.language.VHDLCommenter"/>
     </extensions>
 </idea-plugin>
